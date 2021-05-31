@@ -16,7 +16,7 @@ for (var i = 1; i <= n_points; i++) {
 function measure_and_push(fib, n, res) {
     var t = process.hrtime();
     fib(n);
-    res.push(process.hrtime(t)[1] / (1e3)); // divide by 1e6 to get microsceonds from nanoseconds
+    res.push(process.hrtime(t)[1] / (1e3)); // divide by 1e3 to get microsceonds from nanoseconds
 }
 
 var tail_plot = [{
